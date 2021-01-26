@@ -56,6 +56,9 @@ const Contianer = styled.li`
   box-sizing: border-box;
   // background-color: white;
 
+  @media all and (min-width: 1200px) {
+    width: 120px;
+  }
   @media all and (max-width: 899px) {
     width: 13vw;
   }

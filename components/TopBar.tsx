@@ -10,9 +10,9 @@ function TopBar() {
   return (
     <Container>
       <Round>Round {round}/12</Round>
-      <Icon>
+      {/* <Icon>
         <BsQuestionCircle size="35px" />
-      </Icon>
+      </Icon> */}
     </Container>
   );
 }
@@ -21,11 +21,14 @@ export default TopBar;
 
 const Container = styled.div`
   position: fixed;
+  z-index: 1;
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e4cd9c;
+  box-shadow: 0 2px 5px 2px #e4cd9c;
   color: rgba(0, 0, 0, 0.5);
 `;
 

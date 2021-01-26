@@ -175,22 +175,23 @@ function ScoreBoard() {
 export default ScoreBoard;
 
 const Container = styled.div`
-  z-index: 2;
+  z-index: 4;
   width: 90%;
   max-width: 350px;
-  height: 90%;
+  height: 85vh;
   max-height: 650px;
   padding: 10px;
   color: #111;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
   background-color: #fff6ec;
-  overflow: scroll;
+  overflow-y: scroll;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   @media all and (max-width: 599px) {
     font-size: 0.8em;
+    height: 77vh;
   }
 `;
 

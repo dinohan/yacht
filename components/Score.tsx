@@ -74,4 +74,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   font-weight: 800;
+  @media all and (max-width: 599px) {
+    height: 30px;
+  }
 `;

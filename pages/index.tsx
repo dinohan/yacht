@@ -3,6 +3,7 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 
 import Board from '../components/Board';
+import Chat from '../components/Chat';
 import ScoreBoard from '../components/ScoreBoard';
 import TopBar from '../components/TopBar';
 import { specialState } from '../utils/store';
@@ -62,7 +63,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: stretch;
   // border: 2px yellow solid;
   @media all and (max-width: 899px) {
     margin-left: 60px;
@@ -85,10 +86,4 @@ const Special = styled.div`
   @media all and (max-width: 899px) {
     font-size: 7vw;
   }
-`;
-
-const Chat = styled.div`
-  width: 100%;
-  height: 100%;
-  // background-color: white;
 `;

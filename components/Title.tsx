@@ -23,4 +23,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   font-weight: 700;
+  @media all and (max-width: 599px) {
+    height: 30px;
+  }
 `;

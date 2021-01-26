@@ -98,15 +98,15 @@ function Board() {
   }
 
   function handleClick() {
-    setActionState(true); // dice 돌리는 동안 점수 체크 못하게
+    setActionState(true); // dice 돌리는 동안 행동 통제
     rollDices() // 1초 동안 막 돌리고 새 배열 받아서
       .then(getNewDices) // 새 배열 정렬해서
       .then((args) => {
-        setDices(args);
+        setDices(args); // 적용
         return args;
-      }) // 적용
-      .then(displaySpecial)
-      .then(() => setActionState(false)); // 완료 후 점수 체크 가능하도록
+      })
+      .then(displaySpecial) // 족보가 떴는가?!
+      .then(() => setActionState(false)); // 완료 후 행동 통제 해제
     setRollCount(rollCount + 1);
   }
 
@@ -145,7 +145,7 @@ const Container = styled.div`
 
 const Dices = styled.ul`
   transition-duration: 0.5s;
-  height: 10vw;
+  height: 120px;
   // border: 2px red solid;
 `;
 
